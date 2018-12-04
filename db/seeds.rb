@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Habitat.destroy_all
+Animal.destroy_all
 
 Habitat.create(name: "Rain Forest")
 Habitat.create(name: "Desert")
