@@ -34,7 +34,8 @@ Our product team has ordered the following features:
 	- Should display a list of links to show pages for animals
 - Show page for an animal
 	- Should display all of the animal's details, as well as a link to the show page of the habitat it lives in
-	- Should have link to edit that animal
+	- Should have a link to edit that animal
+	- Should have a button called "Endanger" that when clicked, reduces the population size to 999. 
 - New page for an animal
 	- Should validate for the uniqueness of an animal's name
 	- Population size and average weight should be above 0
