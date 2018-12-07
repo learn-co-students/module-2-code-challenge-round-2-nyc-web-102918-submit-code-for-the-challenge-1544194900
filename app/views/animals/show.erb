@@ -1,0 +1,7 @@
+<h1><%= @animal.species_name %></h1>
+
+<p>Population:<%= @animal.population_size %></p>
+<p>Average Weight:<%= @animal.average_weight %></p>
+<p>Habitat Name:<%= link_to @animal.habitat.name, habitat_path(@animal.habitat) %></p>
+<%= link_to "Edit", edit_animal_path(@animal)%>
+<%= button_to "Endanger" %>

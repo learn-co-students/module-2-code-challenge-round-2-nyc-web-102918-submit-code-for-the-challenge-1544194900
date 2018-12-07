@@ -4,6 +4,7 @@ class CreateAnimals < ActiveRecord::Migration[5.2]
 			t.string :species_name
 			t.integer :population_size
 			t.integer :average_weight
+			t.belongs_to :habitat
 
 			t.timestamps
 		end
