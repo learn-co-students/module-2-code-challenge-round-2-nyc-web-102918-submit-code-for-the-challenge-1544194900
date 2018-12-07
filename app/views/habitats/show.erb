@@ -1,0 +1,19 @@
+<h1><%= @habitat.name %></h1>
+
+<ol>
+  <% @animals.each do |animal| %>
+  <% if animal.habitat == @habitat %>
+  <li><%= link_to animal.species_name, animal %></li>
+  <% end %>
+<% end %>
+
+
+<!-- found this method on stack overflow to return max value in an array -->
+
+<!-- Managed to return the highest average and population size for entire animal class but needed more time to specify habitat -->
+
+Highest Average Weight:<%= Animal.all.max {|a,b| a.average_weight <=> b.average_weight }.species_name%><br>
+Largest Population Size:<%= Animal.all.max {|a,b| a.population_size <=> b.population_size }.species_name%>
+
+
+</ol>

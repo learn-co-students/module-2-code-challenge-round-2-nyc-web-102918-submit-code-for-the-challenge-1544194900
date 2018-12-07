@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :animals, only:[:index, :show, :edit, :update, :destroy]
+  resources :habitats, only:[:show]
 end

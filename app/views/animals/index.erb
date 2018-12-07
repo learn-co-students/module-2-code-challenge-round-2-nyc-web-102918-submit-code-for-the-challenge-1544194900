@@ -1,0 +1,7 @@
+<h1>Animal Index</h1>
+
+<ol>
+  <% @animals.each do |animal| %>
+  <li><%= link_to animal.species_name, animal %></li>
+  <% end %>
+</ol>
