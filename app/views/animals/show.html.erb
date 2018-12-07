@@ -1,0 +1,9 @@
+To edit the animal:  <%= link_to @animal.species_name, edit_animal_path %>
+<br></br>
+Population size:<%= @animal.population_size %>
+<br></br>
+Average weight:<%= @animal.average_weight %>
+
+<br></br>
+
+This animal lives in this Habitat: <%= link_to @animal.habitat.name, habitats_path%>
