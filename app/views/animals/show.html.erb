@@ -1,0 +1,5 @@
+<p>Species<%= link_to @animal.species_name, edit_animal_path %></p>
+<p>Population<%= @animal.population_size %></p>
+<p>Weight<%= @animal.average_weight %></p>
+  <%= link_to @animal.habitat.name, habitat_path(@animal.habitat_id) %>
+  <%# <%= button_to "Endanger", {action: "delete", id: @animal.id} %> %>
