@@ -114,11 +114,11 @@ animals = [
 ]
 
 
-animals.each { |animal| 
+animals.each { |animal|
 	data = animal.merge({
-		population_size: rand(1000..10000), 
+		population_size: rand(1000..10000),
 		habitat_id: Habitat.all.sample.id
 	})
-	
+
 	Animal.create(data)
 }
