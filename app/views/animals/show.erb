@@ -1,0 +1,7 @@
+<h1> <%= @animal.species_name %> </h1>
+
+<p> Population Size: <%= @animal.population_size %> </p>
+<p> Average Weight: <%= @animal.average_weight %> </p>
+<p> Habitat: <%= link_to @animal.habitat.name, habitat_path(@animal.habitat) %> </p>
+<br>
+<%= button_to 'Edit animal', edit_animal_path(@animal) %>

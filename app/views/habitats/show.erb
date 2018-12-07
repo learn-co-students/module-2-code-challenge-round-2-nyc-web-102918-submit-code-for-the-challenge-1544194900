@@ -1,0 +1,6 @@
+<h1> <%= @habitat.name %> </h1>
+
+<% @habitat.animals.each do |animal| %>
+<%= link_to animal.species_name, animal %><br>
+<% end %>
+Largest Population Size: <%= @habitat.largest_population_size.species_name %>
