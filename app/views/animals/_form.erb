@@ -1,0 +1,12 @@
+<%= form_for @animal do |f| %>
+  <%= f.label :species_name %>
+  <%= f.text_field :species_name %><br><br>
+  <%= f.label :population_size %>
+  <%= f.text_field :population_size %><br><br>
+  <%= f.label :habitat %>
+  <%= f.collection_select :habitat_id, Habitat.all, :id, :name %>
+  <%= f.label :average_weight %>
+  <%= f.text_field :average_weight %><br><br>
+
+  <%= f.submit %>
+<% end %>

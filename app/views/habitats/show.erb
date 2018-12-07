@@ -1,0 +1,12 @@
+<h1><%= @habitat.name %></h1>
+
+<ul>
+  <% @habitat.animals.each do |animal| %>
+    <li><%= link_to animal.species_name, animal_path(@habitat.animals) %></li>
+  <% end %>
+</ul>
+
+<p>Highest Average Weight in this Habitat: <%= @habitat.highest_avg_weight %></p><br>
+<!-- #returns the object, did not get to the point of returning the name -->
+<p>Highest Average Weight in this Habitat: <%= @habitat.highest_avg_weight %></p><br>
+<!-- returns the object, did not get to the point of returning the name -->
