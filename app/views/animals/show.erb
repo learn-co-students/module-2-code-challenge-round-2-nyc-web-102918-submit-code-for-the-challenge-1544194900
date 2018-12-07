@@ -1,0 +1,12 @@
+<h1><%= @animal.species_name  %></h1>
+
+<div>
+  <ul>
+    <li><%= @animal.population_size %></li>
+    <li><%= @animal.average_weight %></li>
+  </ul>
+
+  <h2>See the <%= @animal.species_name %> habitat</h2>
+      <%= link_to @animal.habitat.name, habitat_path %>
+
+      <h2>Edit this animal<%= link_to @animal.name, '/animals/edit' %></h2>
