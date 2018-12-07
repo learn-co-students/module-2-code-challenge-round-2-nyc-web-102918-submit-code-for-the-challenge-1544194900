@@ -1,0 +1,8 @@
+<h1>Habitats</h1>
+
+<div>
+  <ul>
+    <li><% @habitats.each do |habitat| %></li>
+    <li><%= link_to habitat.name, habitat_path(habitat) %>
+      <% end %>
+  </ul>
