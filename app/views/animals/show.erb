@@ -1,0 +1,10 @@
+<h1><%=@animal.species_name%></h1>
+
+<%= @animal.population_size %><br>
+<%= @animal.average_weight %>
+<%= link_to @animal.habitat.name, habitat_path(@animal.habitat) %>
+
+<%= link_to "Edit This Animal", edit_animal_path(@animal) %>
+
+<%= button_to "Endanger", endanger_path(@animal) %>
+<!-- I don't know if this is right, Come back to this. -->

@@ -1,0 +1,25 @@
+<h1>Add a new Animal</h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+
+<%= form_for @animal do |f| %>
+  <%= f.label :species_name %>
+  <%= f.text_field :species_name %>
+
+  <%= f.label :population_size %>
+  <%= f.text_field :population_size %>
+
+  <%= f.label :average_weight %>
+  <%= f.text_field :average_weight %>
+
+  <%= f.label "Habitat" %>
+  <%= f.collection_select :habitat_id, @habitats, :id, :name, prompt: true  %>
+
+  <%= f.submit %>
+
+<% end %>
